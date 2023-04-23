@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Gaikwad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81e670a118.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header starts here -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="Images/logo.png" alt="" class="logo"> -->
+                <p class="logo"><span>S</span>H<span>R</span>E<span>Y</span>A<span class="dot">.</span></p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Shreya</span> Gaikwad</h1>
+            </div>
+        </div>
+    <!-- <hr style="border: 1px solid pink; width: 5%;margin: auto; margin-top: 22.1%;"> -->
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/WhatsApp Image 2023-03-10 at 22.39.47 (1).jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="para">Hello and welcome! I am an undergrad student with Electronics and Telecommunication as my major. I live in a city named Khamgaon in the state of Maharashtra. I am trying to hone my skills through self-learning and exploration. This is my personal portfolio website. Take a look at it! </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C/C++</span><br>HTML</li>
+                            <li><span>CSS</span><br>JavaScript</li>
+                            <li><span>ReactJs</span><br>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="font">2017</span><br>Saraswati Vidya Mandir, Khamgaon</li>
+                            <li><span class="font">2019</span><br>Laxminarayan International Junior College, Khamgaon</li>
+                            <li><span class="font">2023</span><br>Shri Sant Gajanan Maharaj College of Engineering, Shegaon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/web2.avif" class="img1">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>This website is made with HTML, CSS and JavaScript</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/a2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Fingerprint Door Lock System</h3>
+                        <p>This project is made using
+                            Arduino UNO, Bluetooth HC-05 and Arduino Software</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Precision Farming Application</h3>
+                        <p>The app outputs the crop prediction using various input parameters and is made using Java and Random Forest algorithm</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#header" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact page -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a href="mailto:07shreyasg@gmail.com" class="yes">07shreyasg@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:9511762159" class="yes">9511762159</a></p>
+                    <!-- updated -->
+                    <div class="social">
+                        <a href="https://www.facebook.com/shreya.gaikwad.35574" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/gaikwadshreya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/s_h_r_e_y_a_7" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/shreyayyyy?t=HnNH9YyrFznOEgOSHjVqQA&s=35" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Shreya-Gaikwad" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/RESUME_OFFCAMPUS.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <!-- Don't worry, I will not spam you! -->
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Shreya Gaikwad.</p>
+        </div>
+    </div>
+    
+ <!-- JS  -->
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+ </script>
+
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-150px";
+    }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbza8cwj5kdUq7h0Wzdyy0e1cmB06UVZcdKn68-BSg997jh72UDvZxt248-IhFx8hTt-ww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Response submitted successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
